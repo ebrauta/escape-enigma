@@ -1,5 +1,6 @@
 package github.ebrauta;
 
+import github.ebrauta.engine.GameEngine;
 import github.ebrauta.models.objects.Door;
 import github.ebrauta.models.objects.Drawer;
 import github.ebrauta.models.Inventory;

@@ -19,12 +19,14 @@ O jogador acorda em um escritório trancado e precisa explorar o ambiente, utili
 ---
 ## 🏗️ Arquitetura e Design Patterns
 O projeto adota uma estrutura desacoplada dividida em 4 pacotes principais:
+```
 src/main/java/github/ebrauta/
 ├── engine/      # Motor de jogo e controle de estado (GameEngine)
 ├── models/       # Entidades de domínio (Room, Inventory, Item, InteractiveObject)
 │   └── objects/ # Subclasses polimórficas (Drawer, Terminal, Door)
 ├── parser/      # Interpretador de comandos via Regex (ParserComando, Comando)
 └── util/        # Utilitários de lógica pura (DecodificadorEnigma - Cifra de César)
+```
 
 ### Principais Destaques de Engenharia
 - **Polimorfismo e Extensibilidade:** A classe abstrata `InteractiveObject` define o contrato comum para qualquer interativo da sala, permitindo que `Drawer`, `Terminal` e `Door` especializem suas comportamentos via *Template Method* (`uponUnlocking`).

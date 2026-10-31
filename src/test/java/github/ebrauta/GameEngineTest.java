@@ -1,5 +1,6 @@
 package github.ebrauta;
 
+import github.ebrauta.engine.GameEngine;
 import github.ebrauta.models.Inventory;
 import github.ebrauta.models.Item;
 import github.ebrauta.models.Room;

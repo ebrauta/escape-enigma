@@ -1,4 +1,4 @@
-package github.ebrauta;
+package github.ebrauta.engine;
 
 import github.ebrauta.models.InteractiveObject;
 import github.ebrauta.models.Inventory;
